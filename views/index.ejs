@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>CARD GAME</h1>
+		<form action="/refreshGame" method="POST">
+			<input type="text" name="" id="cardDeckID">
+			<input type="text" name="" id="devName">
+			<button>DEV BUTTON</button>
+		</form>
+		<h2>Current Card Deck ID:</h2>
+		<span id="deckID"><%=info[0].cardDeckID %></span>
+
+		<button id="button1">Draw a deck of cards</button>
+		<button id="button2">Deal two cards</button>
+
+		<h2>Player 1</h2>
+		<img id="player1" src="" alt="player1 playing card">
+		<h2>Player 2</h2>
+		<img id="player2" src="" alt="player2 playing card">
+
+		<h3>Result</h3>
+		<!-- <button id="remove">REMOVE DECK</button> -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
